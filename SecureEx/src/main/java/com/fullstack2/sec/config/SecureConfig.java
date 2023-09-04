@@ -59,8 +59,12 @@ public class SecureConfig {
 	//메모리 인증 방식은 InMemoryUserDetailManager 라는 애가 담당합니다.
 	
 	//시작하자마자 여러분의 정보가 메모리에 올라옵니다bean사용
+	/*
 	@Bean
 	//메모리의 인증값과 비교해준다. 
+	//DetailsManager애타입을 커스텀해서 특정소스로 만들어서 사용하는게 User을 dto화 시켜서
+	//필수적인건 super로 해서 처리하는게 가장 쉽다.
+	//UserDetailsManager User객체를 이용해서 내부적으로 사용자의정보를 User객체가 갖도록 하겠다.
 	public InMemoryUserDetailsManager userDetailService() {
 		UserDetails user = User.builder()
 									.username("tint")
@@ -72,6 +76,7 @@ public class SecureConfig {
 		return new InMemoryUserDetailsManager(user);
 			
 	}
+	*/
 	
 	//아래는 권한을 설정하는 Fillter 를 이용해서 URL path 마다 권한을 주도록 할게요.
 	//메서드의 리턴은 SecurityFillterChain타입이어야 하고, 권한 설정을 하도록 하는 객체는
