@@ -18,12 +18,12 @@ class SecureExApplicationTests {
 	private PasswordEncoder passwordEncoder;
 	
 	@Autowired
-	private ClubMemberRepository ClubMemberRepository;
+	private ClubMemberRepository clubMemberRepository;
 	
 	@Test
 	void contextLoads() {
 		
-		Optional<ClubMember> res = ClubMemberRepository.findbyEmail("user10@abc.com", false);
+		Optional<ClubMember> res = clubMemberRepository.findbyEmail("user10@abc.com", false);
 		ClubMember member = res.get();
 		System.err.println(member);
 		/*
@@ -46,7 +46,7 @@ class SecureExApplicationTests {
 											member.addMemberRole(ClubMemberRole.ADMIN);
 										}
 			
-			clubMemberRepository.save(member);
+		clubMemberRepository.save(member);
 			
 		});
 		
