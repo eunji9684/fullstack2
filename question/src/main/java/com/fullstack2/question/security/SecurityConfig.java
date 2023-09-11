@@ -10,6 +10,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.header.writers.frameoptions.XFrameOptionsHeaderWriter;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+
 import com.fullstack2.question.service.UserSecurityService;
 
 import lombok.RequiredArgsConstructor;
@@ -29,7 +31,15 @@ public class SecurityConfig {
 			.csrf().disable()
 			.formLogin()
 			.loginPage("/user/login")
-			.defaultSuccessUrl("/question/list");
+			.defaultSuccessUrl("/question/list")
+		
+		 /*로그아웃을 위한 설정 추가*/
+        .and()
+        .logout()
+        .logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
+        .logoutSuccessUrl("/user/login")
+        .invalidateHttpSession(true)
+;
 			
 		return http.build();
 		
