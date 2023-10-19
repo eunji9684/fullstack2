@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+    <script th:src="@{/bootstrap.min.js}"></script>
+    <title>footer</title>
+
 </head>
-<body  class="d-flex flex-column min-vh-100">
- <footer th:fragment ="footerFragment" class="footer py-3 mt-auto">
-    		<h3>푸터입니다.</h3>
-    </footer>
-</body>
-</html>
+<footer th:fragment="footerFragment" class="footer">
+<div class="card mt-3">
+	<div class="card-body text-center">
+		<p class="card-text">
+			<span class="text-muted">Copyright ® fullstack2.log method Corp.
+			All Rights Reserved</span>
+			<br>
+			<small class="text-muted">
+			풀스택2기 2차 프로젝트 모두 수고하셨습니다!</small>
+			</p>
+	</div>
+</div>
+</footer>

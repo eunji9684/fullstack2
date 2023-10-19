@@ -1,15 +1,19 @@
 package com.fullstack2.question.controller;
 
+
+
+import org.apache.catalina.User;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.fullstack2.question.form.UserCreateForm;
 import com.fullstack2.question.service.UserService;
-
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
@@ -60,5 +64,20 @@ public class UserController {
 		return "login";
 	}
 	
+
+    @GetMapping("/find_username")
+    public String showFindUsernameForm(Model model) {
+        // 아이디 찾기 화면을 템플릿으로 전달할 수 있는 로직 추가
+        return "find_username";
+    }
+    
+    @GetMapping("/find_password")
+    public String showFindpasswordForm(Model model) {
+        //비밀번호 찾기 화면을 템플릿으로 전달할 수 있는 로직 추가
+        return "find_password";
+    }
+    
+    
 	
+
 }

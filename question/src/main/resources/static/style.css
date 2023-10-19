@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+textarea{
+	width: 100%;
+}
+
+input[type=submit]{
+	margin-top: 10px;
+}
+.custom-body{
+	   background-image: url('../imgs/nuts.jpg');
+            /* 배경 이미지 크기 및 반복 설정 */
+        background-size: cover; /* 이미지를 화면에 맞게 조절 */
+        background-repeat: no-repeat; /* 이미지 반복 안함 */
+        background-attachment: fixed; /* 이미지 고정 */
+   
+   		margin-top :3%;
+      
+}
+.logo{
+	margin-left : 70px;
+}
+.navbar-brand{
+	color : #563834;
+}
+
+
+.container my-3{
+	height : 300px;
+
+}
+
+.mb-3{
+    width:350px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.btn.btn-primary{
+	    font-family: Poppins-Medium;
+    font-size: 15px;
+	text-transform: uppercase;
+    border:1px solid #D3A47D;
+    background: -webkit-linear-gradient(right,#CCAEA7,#8C5D50);
+    width:350px;
+    margin-left:auto;
+    margin-right:auto;
+    color:#563834;
+}
+
+.btn.btn-primary:hover {
+	 border:1px solid #F6E1B4;
+  	background-color:#362312;
+  	color : white;
+}
+
+.form-check{
+	margin-top:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.easy-login{
+	margin-top : 20px;
+	margin-bottom : 30px;
+    font-weight:800;
+}
+.btn.btn-google.btn-lg{
+    border:1px solid #191919;
+    background-color:white;
+    color:black;
+    font-size:80%;
+    width:170px;
+}
+
+.btn.btn-google.btn-lg img{
+	 height:1.05rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn.btn-kakao.btn-lg{
+    border:1px solid #191919;
+    background-color: #fee500;
+    color:black;
+    font-size:80%;
+    width:170px;
+}
+
+.btn.btn-kakao.btn-lg img{
+	 height:1.05rem;
+    margin-left: 10px;
+    margin-right: 18px;
+}
+ 
+.login-button{
+    text-align:center;
+}
+.button-group{
+    text-align:center;
+}
+.footer{
+    margin:0 auto;
+    text-align:center;
+    bottom:5px;
+    color:gray;
+}
+.logo img{
+    margin-top:50px;
+    width:20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px; /* 원하는 여백 크기 설정 */
+
+}
+
+.navbar .navbar-nav .nav-item {
+    color: #fff;
+    font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #3E2723;
+  color: #fff;
+}
+
+
+    /* 테이블 헤더 스타일 */
+    .bs-danger-bg-subtle th {
+        background-color:#E0B88A; /* 원하는 배경색 */
+        color: #000; /* 헤더 텍스트 색상 */
+    }
+
+    /* 짝수 행 배경색 스타일 */
+    .table tbody tr:nth-child(even) {
+        background-color: #ffeedd; /* 짝수 행 배경색 */
+    }
+
+    /* 홀수 행 배경색 스타일 */
+    .table tbody tr:nth-child(odd) {
+        background-color: #FEFFED; /* 홀수 행 배경색 */
+    }
+    
+.pagination {
+    background-color: #E0B88A; /* 배경색 변경 */
+
+}
+.pagination .page-link {
+    color:black; 
+}
+
+.page-item{
+	    color : #613613;
+}
+
+.page-item.active .page-link {
+    border: 1px solid #D3A47D;
+    background-color: #997950; /* 활성화된 페이지 스타일 변경 */
+    color: black; /* 활성화된 페이지 텍스트 색상 변경 */
+}
+
+.page-item.disabled .page-link {
+    border: 1px solid #D3A47D;
+    background-color: #613613; /* 비활성화된 페이지 스타일 변경 */
+    color: white; /* 비활성화된 페이지 텍스트 색상 변경 */
+}
+
+.sidebar {
+    width: 200px;
+     height: 70vh;
+   margin-top: 20px;
+    margin-left: 20px;
+    bottom: 0;
+    z-index: 1; /* 컨텐츠 영역 위에 표시 */
+}
+.footer {
+    position: absolute;
+	bottom :10px;
+    width: 100%;
+    background-color: #ffe4e1;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.card-body {
+    background-color: #f5fffa; /* 원하는 배경색을 여기에 지정하세요 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
